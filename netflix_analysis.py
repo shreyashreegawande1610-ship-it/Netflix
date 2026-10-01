@@ -47,7 +47,7 @@ netflix.describe() # to find satatical value to describe
 # In[ ]:
 
 
-netflix.fillna(median()) # to remove the null value
+netflix = netflix.fillna(netflix.median(numeric_only=True))
 
 
 # In[19]:
